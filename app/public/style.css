@@ -1,0 +1,95 @@
+html{
+  height:100%;
+}
+
+body{
+  background-color: #f4f4f4;
+  margin:0;
+}
+
+h1{
+  color:#202020;
+}
+
+h2{
+  color:#202020;
+}
+
+h1:hover{
+  font-weight:bold;
+
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+h2:hover{
+  font-weight:bold;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+
+.newWrap{
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro{
+  text-align: center;
+}
+
+.bioText{
+  font-size: 1.3rem;
+}
+
+.mainLogo:hover{
+  font-weight:bold;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+.heartColor{
+  color:red;
+}
+
+.introCard{
+  height: 300px;
+  color: red  ;
+  font-weight: bold;
+  background-color: #333;
+  border-radius: 15px;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1160px;
+  padding-top: 80px;
+  background-image: url("./images/Lin1160x300.jpg");
+  background-position: top;
+  text-shadow: 2px 2px 2px black;
+
+
+}
+
+.rotatingText{
+font-size: 5rem;
+font-weight: bold;
+/* background-color: rgba(40, 40, 40, 0.75); */
+padding-top:10px;
+padding-bottom: 10px;
+border-radius:15px;
+margin-left: auto;
+margin-right: auto;
+width:90%;
+text-align: center;
+}

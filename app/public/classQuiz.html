@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>What D&D Class Are You?</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ece127e92a.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+  <main class="container textCenter">
+    <br>
+    <i class="fab fa-d-and-d fa-6x"></i>
+<br>
+  <h1>What D&D Class Are You?</h1>
+  <h3>Enter the survey below </h3>
+
+  <div id="userSection" class="container">
+  </div>
+  <div id="classSection" class="container">
+
+  </div>
+
+  </main>
+
+</body>
+
+<script type="text/javascript">
+
+  function runUserQuery(){
+    let currentURL = window.location.origin;
+    $.ajax({url: currentURL + "/api/userData", method:"GET"})
+      .done(function(userData){
+        console.log("---------------------------");
+        console.log("URL: " + currentURL + "/api/userData");
+        console.log("---------------------------");
+        console.log(userData);
+        console.log("---------------------------")
+
+        for(i = 0; i < userData.length; i++){
+          console.log(userData[i])
+          let userSection = $("<div>");
+          userSection.addClass("user");
+          userSection.attr('id','user'+i+1);
+          $("#userSection").append(userSection);
+
+          let userNumber = i + 1;
+
+          $("#user"+i+1).append('<h2><span class="label label-primary">'+ userNumber + "</span> | " + userData[i].userName + "</h2>")
+        }
+
+      });
+    }
+
+    function runClassQuery(){
+      let currentURL = window.location.origin;
+      $.ajax({url: currentURL + "/api/dndRaceData", method:"GET"})
+        .done(function(classData){
+          console.log("---------------------------");
+          console.log("URL: " + currentURL + "/api/userData");
+          console.log("---------------------------");
+          console.log(classData);
+          console.log("---------------------------")
+
+          for(i = 0; i < classData.length; i++){
+            console.log(classData[i])
+            let classSection = $("<div>");
+            classSection.addClass("class");
+            classSection.attr('id','class'+i+1);
+            $("#classSection").append(classSection);
+
+            let classNumber = i + 1;
+
+            $("#class"+i+1).append('<h2><span class="label label-primary">'+ classNumber + "</span> | " + classData[i].raceName + "</h2>")
+          }
+
+        });
+      }
+
+
+  runUserQuery();
+  runClassQuery();
+</script>
+
+
+</html>
