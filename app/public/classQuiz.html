@@ -19,75 +19,300 @@
   <main class="container textCenter">
     <br>
     <i class="fab fa-d-and-d fa-6x"></i>
-<br>
-  <h1>What D&D Class Are You?</h1>
-  <h3>Enter the survey below </h3>
+    <br>
+    <h1>What D&D Class Are You?</h1>
+    <h3>Enter the survey below </h3>
 
-  <div id="userSection" class="container">
-  </div>
-  <div id="classSection" class="container">
+    <div class="container">
 
-  </div>
+      <div id="surveyQuestions" class="input-field col s12">
+        <form class="" action="index.html" method="post">
+          <ol>
+            <li>
+              <h5 class="questionHeadline"> In battle, I wish to be the one who decapitates my foes while roaring a galvanizing battle cry...</h5>
+              <select id="question1">
+                <option value="" disabled selected>Your response...</option>
+                <option value="Barbarian,Paladin">This is 100% me. Hear me roar.</option>
+                <option value="Fighter,Bard">This is 80% me. Hear me meow.</option>
+                <option value="Rogue,Ranger,Monk">Sounds a little aggressive, all that yelling.</option>
+                <option value="Cleric,Druid,Rouge,Bard">I really don't like being a frontline fighter</option>
+                <option value="Wizard,Warlock,Bard">Ew frontline, gross. </option>
+              </select>
+            </li>
+            <li>
+              <h5> I prefer my enemies not to see me approach...before its too late.</h5>
+              <select id="question2">
+                <option value="" disabled selected>Your response...</option>
+                <option value="Barbarian,Paladin">Sneak is for the weak.</option>
+                <option value="Fighter,Bard,Ranger">It works but seems a little coward like to me.</option>
+                <option value="Rogue,Monk,Ranger">They'll never know what hit them...</option>
+                <option value="Druid,Cleric,Wizard">I like being unseen, but maybe with less blood?</option>
+                <option value="Paladin,Barbarian">Sneaking around like an urchin is beneath me.</option>
+              </select>
+            </li>
+            <li>
+              <h5>Magic is power. Got a problem? Just apply more magic!</h5>
+              <select id="question3">
+                <option value="" disabled selected>Your response...</option>
+                <option value="Barbarian,Fighter">I hate magic! Real strength comes from muscles baby. The weak peak, nerd.</option>
+                <option value="Wizard,Sorcerer,Warlock">Magic is everything, you muscle burdened neanderthal.</option>
+                <option value="Cleric,Druid">Real magic comes from the power of faith</option>
+                <option value="Bard,Ranger,Monk">Knowing a little magic can be helpful.</option>
+                <option value="Rogue,Bard,Monk,Paladin">Meh, I could go either way.</option>
+              </select>
+            </li>
+            <li>
+              <h5>Nature calls to me, and I call back...</h5>
+              <select id="question4">
+                <option value="" disabled selected>Your response...</option>
+                <option value="Druid">I am one with nature and all her power flows through me.</option>
+                <option value="Ranger,Monk,Cleric">I suppose I enjoy the advantages the wilderness give me, and talking to animals is cool.</option>
+                <option value="Wizard,Warlock,Sorcerer,Rogue,Barbarian">When the weather is nice I like to be outside.</option>
+                <option value="Bard,Wizard,Warlock,Fighter">We have climate control for a reason.</option>
+                <option value="Wizard,Sorcerer">I'm an agoraphoblic</option>
+              </select>
+            </li>
+            <li>
+
+              <h5> Through meditiation and focus, we can attune our bodies to a higher level.</h5>
+              <select id="question5">
+                <option value="" disabled selected>Your response...</option>
+                <option value="Barbarian">Skip the meditiation, just hit the gym scrub.</option>
+                <option value="Fighter,Monk">I like to meditate...with weapons! </option>
+                <option value="Monk">Discipline of the mind and body can overcome anything else, and is the most important above all things...</option>
+                <option value="Druid,Ranger">I like meditating in nature, that sounds fun</option>
+                <option value="Cleric,Paladin">Prayer is the ultimate form of meditiation</option>
+              </select>
+            </li>
+            <li>
+              <h5>I enjoy inspiring and entertaining through storytelling, dancing, singing, or instrument playing </h5>
+              <select id="question6">
+                <option value="" disabled selected>Your response...</option>
+                <option value="Bard">I love entertaining and inspiring others to new heights!</option>
+                <option value="Cleric,Paladin,Fighter">I took communications in college.</option>
+                <option value="Barbarian,Warlock">I don't mind people, but meh.</option>
+                <option value="Monk,Ranger,Sorcerer,Warlock">I'm more of an introvert at heart.</option>
+                <option value="Druid,Wizard">Ew, people.</option>
+              </select>
+            </li>
+            <li>
+
+              <h5> The cause of righteousness is the most important virtue</h5>
+              <select id="question7">
+                <option value="" disabled selected>Your response...</option>
+                <option value="Paladin">I swear to always uphold justice and righteousness through might!</option>
+                <option value="Rogue,Sorcerer">Leave it for the police.</option>
+                <option value="Ranger,Cleric">I usually recycle...</option>
+                <option value="Warlock">Justice is just a concept of man.</option>
+                <option value="Monk,Fighter">Karma will take care of things</option>
+              </select>
+            </li>
+            <li>
+              <h5>I have a deep connection with animals...</h5>
+              <select id="question8">
+                <option value="" disabled selected>Your response...</option>
+                <option value="Druid">My deep connection with animals comes from a deep connection with all of nature.</option>
+                <option value="Ranger">I'd enjoy an animal companion, but it still goes to the bathroom outdoors.</option>
+                <option value="Wizard,Sorcerer">An animal companion sounds okay</option>
+                <option value="Rogue">I'm not really what you'd call an "Animal" person...</option>
+                <option value="Wizard,Sorcerer">Familiars are animals, ...right? </option>
+              </select>
+            </li>
+            <li>
+
+              <h5> In a fight, I wish to be...</h5>
+              <select id="question9">
+                <option value="" disabled selected>Your response...</option>
+                <option value="Barbarian,Rogue">Brutal. Show no remorse. Savage af.</option>
+                <option value="Fighter,Paladin,Monk">Efficient. The superior strike will win.</option>
+                <option value="Rogue,Ranger">Stealthily. Everyone loves surprises.</option>
+                <option value="Wizard,Sorcerer,Warlock">Magically. It's magically delicious. </option>
+                <option value="Cleric,Paladin,Warlock">Faithfully. Laid low through the powers of the divine.</option>
+              </select>
+            </li>
+            <li>
+              <h5> If I had magic, I would like it have it because...</h5>
+              <select id="question10">
+                <option value="" disabled selected>Your response...</option>
+                <option value="Wizard,Druid">I earned it, I studied hard and had the talent to make it happen.</option>
+                <option value="Warlock">A magical pact with a supernatural being. </option>
+                <option value="Cleric,Paladin,Monk">Through my faith in the divine</option>
+                <option value="Druid,Cleric">Through my relationship with nature and the world around me.</option>
+                <option value="Sorcerer">Born with the raw spark of magic within me.</option>
+              </select>
+            </li>
+          </ol>
+          <button id="surveySubmit" type="button" name="button" class="waves-effect waves-light btn">What D&D Character am I?</button>
+        </form>
+      </div>
+
+
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <div id="userSection" class="container">
+    </div>
+    <div id="classSection" class="container">
+
+    </div>
 
   </main>
 
 </body>
 
 <script type="text/javascript">
+  //materialize form initialization
+  $(document).ready(function() {
+    $('select').formSelect();
 
-  function runUserQuery(){
+    let userAnswer = []
+
+    let survey = function(param1, arr) {
+      newAnswer = param1.split(",")
+      newAnswer.forEach(function(g) {
+        arr.push(g);
+      });
+    }
+
+    let classSelector = function(array) {
+      console.log(array)
+      if (array.length == 0)
+        return null;
+      var modeMap = {};
+      var maxEl = array[0],
+        maxCount = 1;
+      for (var i = 0; i < array.length; i++) {
+        var el = array[i];
+        if (modeMap[el] == null) {
+          modeMap[el] = 1;
+        } else {
+          modeMap[el]++;
+        }
+        if (modeMap[el] > maxCount) {
+          maxEl = el;
+          maxCount = modeMap[el];
+        }
+      }
+      console.log('The Winner Is: ' + maxEl);
+      runClassQuery(maxEl);
+      return maxEl;
+    }
+
+
+
+    $('#surveySubmit').on('click', function(p) {
+      answer1 = $('#question1').val();
+      answer2 = $('#question2').val();
+      answer3 = $('#question3').val();
+      answer4 = $('#question4').val();
+      answer5 = $('#question5').val();
+      answer6 = $('#question6').val();
+      answer7 = $('#question7').val();
+      answer8 = $('#question8').val();
+      answer9 = $('#question9').val();
+      answer10 = $('#question10').val();
+
+      survey(answer1, userAnswer);
+      survey(answer2, userAnswer);
+      survey(answer3, userAnswer);
+      survey(answer4, userAnswer);
+      survey(answer5, userAnswer);
+      survey(answer6, userAnswer);
+      survey(answer7, userAnswer);
+      survey(answer8, userAnswer);
+      survey(answer9, userAnswer);
+      survey(answer10, userAnswer);
+      classSelector(userAnswer);
+
+      console.log(userAnswer);
+
+
+      console.log('Answer 1: ' + answer1);
+      console.log('Answer 2: ' + answer2);
+      console.log('Answer 3: ' + answer3);
+      console.log('Answer 4: ' + answer4);
+      console.log('Answer 5: ' + answer5);
+      console.log('Answer 6: ' + answer6);
+      console.log('Answer 7: ' + answer7);
+      console.log('Answer 8: ' + answer8);
+      console.log('Answer 9: ' + answer9);
+      console.log('Answer 10: ' + answer10);
+
+      $('#surveyQuestions').hide();
+    });
+
+
+  });
+
+
+
+  function runUserQuery() {
     let currentURL = window.location.origin;
-    $.ajax({url: currentURL + "/api/userData", method:"GET"})
-      .done(function(userData){
+    $.ajax({
+        url: currentURL + "/api/userData",
+        method: "GET"
+      })
+      .done(function(userData) {
         console.log("---------------------------");
         console.log("URL: " + currentURL + "/api/userData");
         console.log("---------------------------");
         console.log(userData);
         console.log("---------------------------")
 
-        for(i = 0; i < userData.length; i++){
+        for (i = 0; i < userData.length; i++) {
           console.log(userData[i])
           let userSection = $("<div>");
           userSection.addClass("user");
-          userSection.attr('id','user'+i+1);
+          userSection.attr('id', 'user' + i + 1);
           $("#userSection").append(userSection);
 
           let userNumber = i + 1;
 
-          $("#user"+i+1).append('<h2><span class="label label-primary">'+ userNumber + "</span> | " + userData[i].userName + "</h2>")
+          $("#user" + i + 1).append('<h2><span class="label label-primary">' + userNumber + "</span> | " + userData[i].userName + "</h2>")
         }
 
       });
-    }
+  }
 
-    function runClassQuery(){
-      let currentURL = window.location.origin;
-      $.ajax({url: currentURL + "/api/dndRaceData", method:"GET"})
-        .done(function(classData){
-          console.log("---------------------------");
-          console.log("URL: " + currentURL + "/api/userData");
-          console.log("---------------------------");
-          console.log(classData);
-          console.log("---------------------------")
+  function runClassQuery(userClass) {
+    console.log('USER CLASSSSSS' + userClass);
+    let currentURL = window.location.origin;
+    $.ajax({
+        url: currentURL + "/api/dndClassData",
+        method: "GET"
+      })
+      .done(function(classData) {
+        console.log("---------------------------");
+        console.log("URL: " + currentURL + "/api/userData");
+        console.log("---------------------------");
+        console.log(classData);
+        console.log("---------------------------")
 
-          for(i = 0; i < classData.length; i++){
+        for (i = 0; i < classData.length; i++) {
+          if (userClass === classData[i].className) {
+            console.log(classData[i]);
+
             console.log(classData[i])
             let classSection = $("<div>");
             classSection.addClass("class");
-            classSection.attr('id','class'+i+1);
+            classSection.attr('id', 'class' + i + 1);
             $("#classSection").append(classSection);
 
             let classNumber = i + 1;
 
-            $("#class"+i+1).append('<h2><span class="label label-primary">'+ classNumber + "</span> | " + classData[i].raceName + "</h2>")
+            $("#class" + i + 1).append('<h2><span class="label label-primary">' + classNumber + "</span> | " + classData[i].className + "</h2>")
           }
+        }
+      });
+  }
 
-        });
-      }
 
-
-  runUserQuery();
-  runClassQuery();
+  // runUserQuery();
+  // runClassQuery();
 </script>
 
 
