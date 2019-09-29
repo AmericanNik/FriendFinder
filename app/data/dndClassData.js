@@ -6,6 +6,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Strength & Constitution',
     equipmentProficiencies: 'Light and medium armor, shields, simple and martial weapons',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/342/420/618/636272680339895080.png"
 
   },{
     className: 'Bard',
@@ -14,6 +15,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: '',
     equipmentProficiencies: '',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/369/420/618/636272705936709430.png"
 
   },{
     className: 'Cleric',
@@ -22,6 +24,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Wisdom & Charisma',
     equipmentProficiencies: 'Light and medium armor, shields, simple weapons',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/371/420/618/636272706155064423.png"
 
   },{
     className: 'Druid',
@@ -30,6 +33,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Intelligence & Wisdom',
     equipmentProficiencies: 'Light and medium armor (nonmetal), shields (nonmetal), clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/346/420/618/636272691461725405.png"
 
   },{
     className: 'Fighter',
@@ -38,6 +42,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Strength & Constitution',
     equipmentProficiencies: 'All armor, shields, simple and martial weapons',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/359/420/618/636272697874197438.png"
 
   },{
     className: 'Monk',
@@ -46,6 +51,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Strength & Dexterity',
     equipmentProficiencies: 'Simple weapons, shortswords',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/489/420/618/636274646181411106.png"
 
   },{
     className: 'Paladin',
@@ -54,6 +60,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Wisdom & Charisma',
     equipmentProficiencies: 'All armor, shields, simple and martial weapons',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/365/420/618/636272701937419552.png"
 
   },{
     className: 'Ranger',
@@ -62,6 +69,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Strength & Dexterity',
     equipmentProficiencies: 'Light and medium armor, shields, simple and martial weapons',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/367/420/618/636272702826438096.png"
 
   },{
     className: 'Rogue',
@@ -70,6 +78,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Dexterity & Intelligence',
     equipmentProficiencies: 'Light armor, simple weapons, hand crossbows, longswords, rapiers, shortswords',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/384/420/618/636272820319276620.png"
 
   },{
     className: 'Sorcerer',
@@ -78,6 +87,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Constitution & Charisma',
     equipmentProficiencies: 'Daggers, darts, slings, quarterstaffs, light crossbows',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/485/420/618/636274643818663058.png"
 
   },{
     className: 'Warlock',
@@ -86,6 +96,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Wisdom & Charisma',
     equipmentProficiencies: 'Light armor, simple weapons',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/375/420/618/636272708661726603.png"
 
   },{
     className: 'Wizard',
@@ -94,6 +105,7 @@ let dndClasses = [
     classScore: '',
     savingProficiencies: 'Intelligence & Wisdom',
     equipmentProficiencies: 'Daggers, darts, slings, quarterstaffs, light crossbows',
+    picture: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/357/420/618/636272696881281556.png"
 
   },
 ];
