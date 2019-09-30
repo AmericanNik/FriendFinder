@@ -12,7 +12,8 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/ece127e92a.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body>
@@ -21,7 +22,7 @@
     <i class="fab fa-d-and-d fa-6x"></i>
     <br>
     <h1>What D&D Class Are You?</h1>
-    <h3 class="subheader" >Enter the survey below </h3>
+    <h3 class="subheader">Enter the survey below </h3>
 
     <div class="container">
 
@@ -142,21 +143,33 @@
               </select>
             </li>
           </ol>
-          <button id="surveySubmit" type="button" name="button" class="waves-effect waves-light btn">What D&D Character am I?</button>
+          <button id="surveySubmit" type="button" name="button" class="waves-effect waves-light btn"><a href="#ex1" rel="modal:open">What D&D Character am I?</a></button>
         </form>
       </div>
 
 
     </div>
 
-    <div id="userSection" class="container">
+    <!-- <div id="userSection" class="container">
     </div>
     <div id="classSection" class="container">
 
+    </div> -->
+
+    <div id="ex1" class="modal">
+      <h3 class="textCenter">Your Results!</h3>
+      <div id="userSection" class="container">
+      </div>
+      <div id="classSection" class="container">
+
+      </div>
+
+      <a href="#" rel="modal:close">Close</a>
     </div>
 
   </main>
 
   <script type="text/javascript" src="./assets/helpers.js"></script>
 </body>
+
 </html>

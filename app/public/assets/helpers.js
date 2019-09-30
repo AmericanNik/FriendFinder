@@ -4,7 +4,9 @@ console.log('ready');
 
 $('select').formSelect();
 
-let userAnswer = []
+let userAnswer = [];
+let modal  = $('#myModal');
+let span = $('.close');
 
 let survey = function(param1, arr) {
   newAnswer = param1.split(",")
@@ -40,6 +42,9 @@ let classSelector = function(array) {
 
 
 $('#surveySubmit').on('click', function(p) {
+
+  $('#userSection').empty();
+  $('#classSection').empty();
   answer1 = $('#question1').val();
   answer2 = $('#question2').val();
   answer3 = $('#question3').val();
@@ -62,9 +67,12 @@ $('#surveySubmit').on('click', function(p) {
   survey(answer9, userAnswer);
   survey(answer10, userAnswer);
   classSelector(userAnswer);
-  $(".subheader").hide();
+  // $(".subheader").hide();
+  //
+  // $('#surveyQuestions').hide();
 
-  $('#surveyQuestions').hide();
+ userAnswer = [];
+
 });
 
 
